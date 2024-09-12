@@ -3,7 +3,7 @@ primers = []
 not_primes = []
 for i in numbers:
     if i<2:
-        not_primes.append(i)
+        pass
     else:
         is_prime = True
         for j in range (2,i):
