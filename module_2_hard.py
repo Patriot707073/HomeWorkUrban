@@ -6,4 +6,4 @@ def password (n):
         result = result + str(i) + str(j)
   return result
 n = int(input("Введите целое число от 3 - 20\n"))
-print ("Пароль : ",password(n))19
+print ("Пароль : ",password(n))
