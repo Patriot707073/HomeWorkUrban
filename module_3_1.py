@@ -1,10 +1,11 @@
 calls = 0
-def count_calls():
-    print (calls)
 
-def string_info(string):
+def count_calls():
     global calls
     calls = calls + 1
+
+def string_info(string):
+    count_calls()
     b= []
     b.append(len(string))
     b.append(string.upper())
@@ -13,8 +14,7 @@ def string_info(string):
 
 
 def is_contains (string, list_to_search):
-    global calls
-    calls = calls + 1
+    count_calls()
     flag = False
     for i in list_to_search:
         if string.lower() == i.lower():
